@@ -1,0 +1,8 @@
+<h2>Listado del código postal de los clientes </h2>
+{{#if users}}
+  <ul>
+    {{#each users}}
+      <li>{{this.name}}({{this.address.zipcode}})</li>
+    {{/each}}
+  </ul>
+{{/if}}
